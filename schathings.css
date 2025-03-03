@@ -1,0 +1,327 @@
+/* MAIN FONT SORA AOI */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@420&display=swap');
+:root {
+  --font-primary: "Sora", sans-serif;
+  --font-display: "Sora", sans-serif;
+  --font-headline: "Sora", sans-serif;
+  --font-code: "Sora", monospace;
+}
+
+
+/* CUSTOM CSS From Nowhere */
+
+/* Server Name Tooltip 1 LINE */
+[class^=tooltip] {
+    max-width: unset !important;
+}
+
+/* Search Bar Change Colour*/
+.icon_fea832.visible_fea832 {
+    color: var(--text-2);
+}
+
+/* Role color on profile By Refact0r*/
+.role_dfa8b6.pill_dfa8b6 {
+    position: relative;
+    background: none;
+    border: none;
+    padding-left: 28px;
+}
+
+.role_dfa8b6.pill_dfa8b6 > span {
+    z-index: 1;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleRemoveButton_dfa8b6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 !important;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569 {
+    margin: 6px 8px;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: var(--radius-xs);
+    filter: brightness(1.1);
+    opacity: 0.25;
+}
+
+/* Reduce Channel List Spacing */
+[class="link__2ea32"] {
+    padding-block: 2px;
+}
+
+/* Read All Button By Blade04208 */
+.vc-ranb-button {
+  margin: 0 18px;
+  width: var(--guildbar-avatar-size);
+  min-height: 40px;
+  max-height: 40px;
+  left: -7px;
+  padding: 5px;
+  background-color: var(--bg-2);
+  border: none;
+  border-radius: 12px;
+}
+
+.vc-ranb-button .contents__201d5 {
+  font-size: 0;
+}
+
+.vc-ranb-button .contents__201d5::after {
+  content: "asdfg";
+  font-size: 18px;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  color: transparent;
+  top: 2.5px;
+  left: 4px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iI0I3QjdCNyI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE4IDdsLTEuNDEtMS40MS02LjM0IDYuMzQgMS40MSAxLjQxTDE4IDd6bTQuMjQtMS40MUwxMS42NiAxNi4xNyA3LjQ4IDEybC0xLjQxIDEuNDFMMTEuNjYgMTlsMTItMTItMS40Mi0xLjQxek0uNDEgMTMuNDFMNiAxOWwxLjQxLTEuNDFMMS44MyAxMiAuNDEgMTMuNDF6Ii8+PC9zdmc+);
+  background-repeat: no-repeat;
+}
+
+.vc-ranb-button:hover {
+  background-color: var(--accent-3);
+}
+
+.vc-ranb-button:hover .contents__201d5::after {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCI+PHBhdGggZD0iTTE4IDdsLTEuNDEtMS40MS02LjM0IDYuMzQgMS40MSAxLjQxTDE4IDd6bTQuMjQtMS40MUwxMS42NiAxNi4xNyA3LjQ4IDEybC0xLjQxIDEuNDFMMTEuNjYgMTlsMTItMTItMS40Mi0xLjQxek0uNDEgMTMuNDFMNiAxOWwxLjQxLTEuNDFMMS44MyAxMiAuNDEgMTMuNDF6Ii8+PC9zdmc+");
+}
+
+/* Move Vencord Toolbox */
+.visual-refresh .toolbar__9293f .iconWrapper__9293f {
+  margin: 0;
+  order: -1;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.visual-refresh .toolbar__9293f .iconWrapper__9293f:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Vencord Toolbox Icon */
+.vc-toolbox-btn,
+.vc-toolbox-icon {
+   content: url(https://raw.githubusercontent.com/scha-dev/schaicons/main/cat.svg);
+   right: 4px;
+}
+
+/* Home Icon */
+[data-list-item-id="guildsnav___home"] {
+   content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjUwMCIgaGVpZ2h0PSI1MDAiPgo8cGF0aCBkPSJNMCAwIEMxLjA4MDI5NDggLTAuMDA3NjEzNTMgMi4xNjA1ODk2IC0wLjAxNTIyNzA1IDMuMjczNjIwNjEgLTAuMDIzMDcxMjkgQzUuNTQ5MjUyNDUgLTAuMDMzODA0NDQgNy44MjQ5MzMyOCAtMC4wMzY3NTMyOSAxMC4xMDA1ODU5NCAtMC4wMzIyMjY1NiBDMTMuNDk3NjM0NDUgLTAuMDMxMjYzOTUgMTYuODkyMzQ0MzMgLTAuMDcyNzY2NiAyMC4yODkwNjI1IC0wLjExNzE4NzUgQzY4LjM5MjUyMTA1IC0wLjM3OTc4ODg3IDExMy4zNjIzMDExMiAyMC45OTA5NDQ4NCAxNDcuMjk2ODc1IDU0LjQ2ODc1IEMxODEuMjM4NTg5MTYgODguNzY1MDc5MDkgMTk5LjcxOTIwMTQxIDEzNS41NDM1OTg3NyAxOTkuNzM0Mzc1IDE4My41OTM3NSBDMTk5LjUwMzIxMDA1IDIyNS42MTczNDc5OCAxODYuODk4NTgyNzggMjY0Ljk4MzIxMDAxIDE2MS4yOTY4NzUgMjk4LjQ2ODc1IEMxNjAuNjE0OTYwOTQgMjk5LjM3NDk2MDk0IDE1OS45MzMwNDY4OCAzMDAuMjgxMTcxODcgMTU5LjIzMDQ2ODc1IDMwMS4yMTQ4NDM3NSBDMTQ4Ljk5NjEyNTQ2IDMxNC4yODQ1MDc5NSAxMzYuODY0ODI5ODMgMzI1LjkyNTczODcxIDEyMy4yOTY4NzUgMzM1LjQ2ODc1IEMxMjIuNzE2MTUyMzQgMzM1Ljg4MzE4MzU5IDEyMi4xMzU0Mjk2OSAzMzYuMjk3NjE3MTkgMTIxLjUzNzEwOTM4IDMzNi43MjQ2MDkzOCBDMTEyLjI1MDk0NjEzIDM0My4zMTc2ODU1MyAxMDIuNjUzODA3MDggMzQ4Ljc0NDU3ODkyIDkyLjI5Njg3NSAzNTMuNDY4NzUgQzkxLjMwMzk3NDYxIDM1My45MjY3NzAwMiA5MS4zMDM5NzQ2MSAzNTMuOTI2NzcwMDIgOTAuMjkxMDE1NjIgMzU0LjM5NDA0Mjk3IEM4MS44NTM2OTUyNCAzNTguMjMzNDc0NzIgNzMuMjg5MTk0NTUgMzYxLjIzMzI5MTM4IDY0LjM1OTM3NSAzNjMuNzE4NzUgQzYzLjExMDk5ODU0IDM2NC4wNjk5Mzg5NiA2My4xMTA5OTg1NCAzNjQuMDY5OTM4OTYgNjEuODM3NDAyMzQgMzY0LjQyODIyMjY2IEM0Ni41MjIzNjI2MiAzNjguNDkwNjgzMjggMzEuNDc5MDY0MjMgMzcwLjAyNDI0ODA4IDE1LjY3MTg3NSAzNjkuOTA2MjUgQzE0LjM2Njc1OTY0IDM2OS45MDE2ODc5MyAxNC4zNjY3NTk2NCAzNjkuOTAxNjg3OTMgMTMuMDM1Mjc4MzIgMzY5Ljg5NzAzMzY5IEMtOC41MzEyNDA4NiAzNjkuNzg1OTg4MTggLTI4LjI3NTYwNzgxIDM2Ni4zOTA4MjU1NCAtNDguNzAzMTI1IDM1OS40Njg3NSBDLTQ5Ljc5ODgyODEyIDM1OS4xMTQyNTc4MSAtNTAuODk0NTMxMjUgMzU4Ljc1OTc2NTYyIC01Mi4wMjM0Mzc1IDM1OC4zOTQ1MzEyNSBDLTc2LjE2NDkwMTgzIDM0OS45MTY2NTQwOSAtOTcuNTg0MjY3MjYgMzM1LjMyMDI4MDMzIC0xMTUuNzAzMTI1IDMxNy40Njg3NSBDLTExNi4yMTUyMDUwOCAzMTYuOTcwMzY2MjEgLTExNi43MjcyODUxNiAzMTYuNDcxOTgyNDIgLTExNy4yNTQ4ODI4MSAzMTUuOTU4NDk2MDkgQy0xMzAuMzc3MTkyMzMgMzAzLjE3OTMzNDU1IC0xMzAuMzc3MTkyMzMgMzAzLjE3OTMzNDU1IC0xMzEuMjY5NTMxMjUgMjk4LjQ5NjA5Mzc1IEMtMTMxLjI1OTA1NTc3IDI5MC4yMDk5OTEwMyAtMTMxLjI1OTA1NTc3IDI5MC4yMDk5OTEwMyAtMTI4LjY0MDYyNSAyODYuNzE4NzUgQy0xMjMuMjQxNTU0ODYgMjg0LjQyMTI3MzM1IC0xMTcuNzg2Njg3NzQgMjg1LjUyNjY0OTE1IC0xMTIuMTQwNjI1IDI4Ni40Njg3NSBDLTc1Ljk5OTE3NjQxIDI5MS42NjEzNTQ4MiAtMzkuMTAyNTEyMjIgMjgxLjkxODk0NjY4IC05LjcwMzEyNSAyNjAuNDY4NzUgQzIxLjYzMzY2MDgxIDIzNi45NzgwNDg2NSA0Mi4yNjcyNjk4NSAyMDMuOTY5NjQ2MzggNDcuOTEzMDg1OTQgMTY1LjAwNzgxMjUgQzQ4LjYxODQzOCAxNTguNTAzNDk3MzEgNDguNjkwNTM5MjMgMTUyLjAwMzExNzAyIDQ4LjY3MTg3NSAxNDUuNDY4NzUgQzQ4LjY3MTMzMTE4IDE0NC43NDgwODM1IDQ4LjY3MDc4NzM1IDE0NC4wMjc0MTY5OSA0OC42NzAyMjcwNSAxNDMuMjg0OTEyMTEgQzQ4LjUzNDI5OTg1IDEwMy45MzM0NDM0OSAzMi4xNDQ5MTY2MyA2OC44ODU2MTE5NiA0LjM4MjU2ODM2IDQxLjI0OTUxMTcyIEMtMy40ODk4MTM5NCAzMy42MTU3NTU2NSAtMTIuMDgzODc5NDYgMjcuMDYyNTE2MjEgLTIxLjY3OTY4NzUgMjEuNzIyNjU2MjUgQy0yNC41MzA3OTQzNSAxOS45NTU4NTA2NiAtMjYuMzM0Mzc3ODkgMTguNjQ3ODU3NTMgLTI3LjM1NTQ2ODc1IDE1LjM4MjgxMjUgQy0yNy44MjM5NjI2OCAxMS42MjIwMjU1OCAtMjcuOTgyMDY4NiA5LjE0NDA4NzE0IC0yNi41MTU2MjUgNS41OTM3NSBDLTE5LjE5NzAyMTgzIDAuMDY0MTM4NzIgLTguODUyODA2NjUgMC4wMDE3ODI3MiAwIDAgWiAiIGZpbGw9IiNBNEEwQTAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxNS43MDMxMjUsNjUuNTMxMjUpIi8+Cjwvc3ZnPgo=);
+   background-color: var(--bg-2);
+}
+
+[data-list-item-id="guildsnav___home"]:hover {
+   content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjUwMCIgaGVpZ2h0PSI1MDAiPgo8cGF0aCBkPSJNMCAwIEMxLjA4MDI5NDggLTAuMDA3NjEzNTMgMi4xNjA1ODk2IC0wLjAxNTIyNzA1IDMuMjczNjIwNjEgLTAuMDIzMDcxMjkgQzUuNTQ5MjUyNDUgLTAuMDMzODA0NDQgNy44MjQ5MzMyOCAtMC4wMzY3NTMyOSAxMC4xMDA1ODU5NCAtMC4wMzIyMjY1NiBDMTMuNDk3NjM0NDUgLTAuMDMxMjYzOTUgMTYuODkyMzQ0MzMgLTAuMDcyNzY2NiAyMC4yODkwNjI1IC0wLjExNzE4NzUgQzY4LjM5MjUyMTA1IC0wLjM3OTc4ODg3IDExMy4zNjIzMDExMiAyMC45OTA5NDQ4NCAxNDcuMjk2ODc1IDU0LjQ2ODc1IEMxODEuMjM4NTg5MTYgODguNzY1MDc5MDkgMTk5LjcxOTIwMTQxIDEzNS41NDM1OTg3NyAxOTkuNzM0Mzc1IDE4My41OTM3NSBDMTk5LjUwMzIxMDA1IDIyNS42MTczNDc5OCAxODYuODk4NTgyNzggMjY0Ljk4MzIxMDAxIDE2MS4yOTY4NzUgMjk4LjQ2ODc1IEMxNjAuNjE0OTYwOTQgMjk5LjM3NDk2MDk0IDE1OS45MzMwNDY4OCAzMDAuMjgxMTcxODcgMTU5LjIzMDQ2ODc1IDMwMS4yMTQ4NDM3NSBDMTQ4Ljk5NjEyNTQ2IDMxNC4yODQ1MDc5NSAxMzYuODY0ODI5ODMgMzI1LjkyNTczODcxIDEyMy4yOTY4NzUgMzM1LjQ2ODc1IEMxMjIuNzE2MTUyMzQgMzM1Ljg4MzE4MzU5IDEyMi4xMzU0Mjk2OSAzMzYuMjk3NjE3MTkgMTIxLjUzNzEwOTM4IDMzNi43MjQ2MDkzOCBDMTEyLjI1MDk0NjEzIDM0My4zMTc2ODU1MyAxMDIuNjUzODA3MDggMzQ4Ljc0NDU3ODkyIDkyLjI5Njg3NSAzNTMuNDY4NzUgQzkxLjMwMzk3NDYxIDM1My45MjY3NzAwMiA5MS4zMDM5NzQ2MSAzNTMuOTI2NzcwMDIgOTAuMjkxMDE1NjIgMzU0LjM5NDA0Mjk3IEM4MS44NTM2OTUyNCAzNTguMjMzNDc0NzIgNzMuMjg5MTk0NTUgMzYxLjIzMzI5MTM4IDY0LjM1OTM3NSAzNjMuNzE4NzUgQzYzLjExMDk5ODU0IDM2NC4wNjk5Mzg5NiA2My4xMTA5OTg1NCAzNjQuMDY5OTM4OTYgNjEuODM3NDAyMzQgMzY0LjQyODIyMjY2IEM0Ni41MjIzNjI2MiAzNjguNDkwNjgzMjggMzEuNDc5MDY0MjMgMzcwLjAyNDI0ODA4IDE1LjY3MTg3NSAzNjkuOTA2MjUgQzE0LjM2Njc1OTY0IDM2OS45MDE2ODc5MyAxNC4zNjY3NTk2NCAzNjkuOTAxNjg3OTMgMTMuMDM1Mjc4MzIgMzY5Ljg5NzAzMzY5IEMtOC41MzEyNDA4NiAzNjkuNzg1OTg4MTggLTI4LjI3NTYwNzgxIDM2Ni4zOTA4MjU1NCAtNDguNzAzMTI1IDM1OS40Njg3NSBDLTQ5Ljc5ODgyODEyIDM1OS4xMTQyNTc4MSAtNTAuODk0NTMxMjUgMzU4Ljc1OTc2NTYyIC01Mi4wMjM0Mzc1IDM1OC4zOTQ1MzEyNSBDLTc2LjE2NDkwMTgzIDM0OS45MTY2NTQwOSAtOTcuNTg0MjY3MjYgMzM1LjMyMDI4MDMzIC0xMTUuNzAzMTI1IDMxNy40Njg3NSBDLTExNi4yMTUyMDUwOCAzMTYuOTcwMzY2MjEgLTExNi43MjcyODUxNiAzMTYuNDcxOTgyNDIgLTExNy4yNTQ4ODI4MSAzMTUuOTU4NDk2MDkgQy0xMzAuMzc3MTkyMzMgMzAzLjE3OTMzNDU1IC0xMzAuMzc3MTkyMzMgMzAzLjE3OTMzNDU1IC0xMzEuMjY5NTMxMjUgMjk4LjQ5NjA5Mzc1IEMtMTMxLjI1OTA1NTc3IDI5MC4yMDk5OTEwMyAtMTMxLjI1OTA1NTc3IDI5MC4yMDk5OTEwMyAtMTI4LjY0MDYyNSAyODYuNzE4NzUgQy0xMjMuMjQxNTU0ODYgMjg0LjQyMTI3MzM1IC0xMTcuNzg2Njg3NzQgMjg1LjUyNjY0OTE1IC0xMTIuMTQwNjI1IDI4Ni40Njg3NSBDLTc1Ljk5OTE3NjQxIDI5MS42NjEzNTQ4MiAtMzkuMTAyNTEyMjIgMjgxLjkxODk0NjY4IC05LjcwMzEyNSAyNjAuNDY4NzUgQzIxLjYzMzY2MDgxIDIzNi45NzgwNDg2NSA0Mi4yNjcyNjk4NSAyMDMuOTY5NjQ2MzggNDcuOTEzMDg1OTQgMTY1LjAwNzgxMjUgQzQ4LjYxODQzOCAxNTguNTAzNDk3MzEgNDguNjkwNTM5MjMgMTUyLjAwMzExNzAyIDQ4LjY3MTg3NSAxNDUuNDY4NzUgQzQ4LjY3MTMzMTE4IDE0NC43NDgwODM1IDQ4LjY3MDc4NzM1IDE0NC4wMjc0MTY5OSA0OC42NzAyMjcwNSAxNDMuMjg0OTEyMTEgQzQ4LjUzNDI5OTg1IDEwMy45MzM0NDM0OSAzMi4xNDQ5MTY2MyA2OC44ODU2MTE5NiA0LjM4MjU2ODM2IDQxLjI0OTUxMTcyIEMtMy40ODk4MTM5NCAzMy42MTU3NTU2NSAtMTIuMDgzODc5NDYgMjcuMDYyNTE2MjEgLTIxLjY3OTY4NzUgMjEuNzIyNjU2MjUgQy0yNC41MzA3OTQzNSAxOS45NTU4NTA2NiAtMjYuMzM0Mzc3ODkgMTguNjQ3ODU3NTMgLTI3LjM1NTQ2ODc1IDE1LjM4MjgxMjUgQy0yNy44MjM5NjI2OCAxMS42MjIwMjU1OCAtMjcuOTgyMDY4NiA5LjE0NDA4NzE0IC0yNi41MTU2MjUgNS41OTM3NSBDLTE5LjE5NzAyMTgzIDAuMDY0MTM4NzIgLTguODUyODA2NjUgMC4wMDE3ODI3MiAwIDAgWiAiIGZpbGw9IiMwMDAwMDAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIxNS43MDMxMjUsNjUuNTMxMjUpIi8+Cjwvc3ZnPgo=);
+   background-color: var(--accent-3);
+}
+
+/* Add Background Color Discover */
+.circleIconButton__5bc7e {
+  background-color: var(--bg-2);
+}
+
+/* COLORFUL LINKS */
+.anchor_edefb8 > span:not(.username__703b9) {
+    background: linear-gradient(30deg, rgb(97, 218, 251) 20%, rgb(0, 123, 255) 98%);
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.3px; /* Makes the text more readable */
+    padding: 1px 2px; /* Adds spacing for better glow visibility */
+    background-clip: text;
+    text-shadow: 0 0 5px rgba(97, 218, 251, 0.5);
+    position: relative;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.anchor_edefb8 > span:not(.username__703b9):hover {
+    text-shadow: 0 0 8px rgba(97, 218, 251, 0.8);
+}
+
+
+/* UI CLEANUP – REMOVE UNWANTED STUFF */
+
+/* Remove Unnecessary Buttons Chat Bar */
+button[aria-label|="Send a gift"],
+button[aria-label|="Open GIF picker"],
+button[aria-label|="Open sticker picker"],
+button[aria-label|="Open Translate Modal"] {
+    display: none;
+}
+
+/* Remove Certain Message Actions */
+[aria-label*="Create Thread"],
+[aria-label*="Mark Unread"],
+[aria-label*="Copy Link"],
+[aria-label*="Pin Message"],
+[aria-label*="Copy Message ID"] {
+    display: none;
+}
+
+/* Remove Create Invite & Channel Buttons */
+[class^="iconVisibility_"] [aria-label="Create Invite"],
+[class^="iconVisibility_"] [aria-label="Edit Channel"],
+[class^="iconVisibility_"] [aria-label="Create Channel"] {
+    display: none !important;
+}
+
+/* Remove Emoji & Separator in Message Actions */
+div[aria-label*="Message Actions"] > div > div > div > div[class*="emoji"],
+div[aria-label*="Message Actions"] > div > div[class*="separator_"] {
+    display: none;
+}
+
+/* Remove App Edit Image Button */
+div[aria-label="Edit Image with Apps"] {
+    display: none;
+}
+
+/* Remove Boost Section from Servers */
+div[data-list-item-id*="channels___boosts-"] {
+    display: none;
+}
+
+/* Remove Active Now Activities */
+[class^=nowPlayingColumn_] {
+    display: none;
+}
+
+/* Remove Reaction Right-Click Menu */
+[id^="message-quickreact-"] {
+    display: none !important;
+}
+
+[id^="message-quickreact-"] {
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Remove Add Status */
+[aria-label="Add custom status"] {
+    display: none;
+}
+
+/* Remove Activity Members List */
+div[aria-label*="Members"] > div > div[role="listitem"] {
+    display: none;
+}
+
+/* Vencord MemberCount Tweaks */
+/* This module has no affect unless the vencord MemberCount plugin is installed */
+/* https://vencord.dev/plugins/MemberCount */
+
+.vc-membercount-online-dot,
+.vc-membercount-total-dot {
+    display: none !important;
+}
+
+.vc-membercount-total::before {
+    content: "/";
+    visibility: visible;
+    position: absolute;
+    display: contents;
+}
+
+.vc-membercount-total::after {
+    content: " online";
+    visibility: visible;
+    position: absolute;
+    display: contents;
+}
+
+.membersGroup_c8ffbb.container_cc72c1 {
+    padding-top: 20px;
+}
+
+/* TOP BAR USER BY refact0r */
+.visual-refresh {
+	--custom-app-top-bar-height: 24px;
+
+	.trailing_c38106 > a[href="https://support.discord.com"]
+	{
+		display: none;
+	}
+
+	.stack_dbd263 {
+		overflow: hidden scroll;
+		scrollbar-width: none;
+	}
+	.tutorialContainer__1f388 {
+		margin-bottom: 48px;
+	}
+	.recentsIcon_c99c29 {
+		position: fixed;
+		width: 40px;
+		height: 40px;
+		top: calc(var(--custom-app-top-bar-height) + 1px + var(--custom-guild-list-padding) + 48px);
+		left: calc(var(--gap) + 1px + var(--custom-guild-list-padding));
+	}
+	.recentsIcon_c99c29 .button__85643 {
+		width: 100%;
+		height: 100%;
+		background-color: var(--bg-2);
+		border-radius: var(--radius-md);
+		transition: background-color 0.15s ease-out;
+
+		&:hover {
+			background-color: var(--accent-3);
+
+			.icon__9293f {
+				color: #000000;
+			}
+		}
+	}
+	.recentsIcon_c99c29 .icon__9293f {
+		transition: color 0.15s ease-out;
+        color: hsl(0, 2%, 64%);
+		width: 24px;
+		height: 24px;
+	}
+	.recentMentionsPopout__95796 {
+		transform: translateX(100%);
+	}
+
+	.title_c38106 {
+		padding-left: var(--gap);
+		justify-content: flex-start;
+	}
+	.title__85643 {
+		gap: 4px;
+	}
+	.title__85643 .icon_f34534 {
+		width: 16px;
+		height: 16px;
+		display: none;
+	}
+	.title__85643 .text-sm\/medium_cf4812 {
+		line-height: 90%;
+		color: var(--text-5);
+		font-weight: 700;
+	}
+
+	.layer__960e4.baseLayer__960e4 {
+		transform: none !important;
+	}
+
+	.layers__960e4 > .layer__960e4.animating__960e4 {
+		will-change: opacity;
+	}
+}
+
