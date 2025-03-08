@@ -1,3 +1,6 @@
+/* Old Chat Bar */
+@import url('https://schaxyz.github.io/refreshxyz/oldchatbar.css');
+
 /* MAIN FONT SORA AOI */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@420&display=swap');
 :root {
@@ -7,9 +10,7 @@
   --font-code: "Sora", monospace;
 }
 
-
 /* CUSTOM CSS From Nowhere */
-
 /* Server Name Tooltip 1 LINE */
 [class^=tooltip] {
     max-width: unset !important;
