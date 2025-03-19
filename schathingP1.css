@@ -1,13 +1,10 @@
-
-
-/* MAIN FONT Atkinson Hyperlegible Mono */
-/* MAIN FONT SORA AOI */
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@420&display=swap');
+/* MAIN FONT Gidole */
+@import url('https://fonts.googleapis.com/css2?family=Gidole&display=swap');
 :root {
-  --font-primary: "Sora", sans-serif;
-  --font-display: "Sora", sans-serif;
-  --font-headline: "Sora", sans-serif;
-  --font-code: "Sora", monospace;
+  --font-primary: "Gidole", sans-serif;
+  --font-display: "Gidole", sans-serif;
+  --font-headline: "Gidole", sans-serif;
+  --font-code: "Gidole", monospace;
 }
 
 /* CUSTOM CSS From Nowhere */
