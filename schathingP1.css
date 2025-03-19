@@ -1,12 +1,12 @@
 
 
-/* MAIN FONT SORA AOI */
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@420&display=swap');
+/* MAIN FONT Atkinson Hyperlegible Mono */
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
 :root {
-  --font-primary: "Sora", sans-serif;
-  --font-display: "Sora", sans-serif;
-  --font-headline: "Sora", sans-serif;
-  --font-code: "Sora", monospace;
+  --font-primary: "Atkinson Hyperlegible Mono", sans-serif;
+  --font-display: "Atkinson Hyperlegible Mono", sans-serif;
+  --font-headline: "Atkinson Hyperlegible Mono", sans-serif;
+  --font-code: "Atkinson Hyperlegible Mono", monospace;
 }
 
 /* CUSTOM CSS From Nowhere */
