@@ -1,10 +1,10 @@
-/* MAIN FONT Gidole */
-@import url('https://fonts.googleapis.com/css2?family=Gidole&display=swap');
+/* MAIN FONT Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..00;1,300..800&display=swap');
 :root {
-  --font-primary: "Gidole", sans-serif;
-  --font-display: "Gidole", sans-serif;
-  --font-headline: "Gidole", sans-serif;
-  --font-code: "Gidole", monospace;
+  --font-primary: "Open Sans", sans-serif;
+  --font-display: "Open Sans", sans-serif;
+  --font-headline: "Open Sans", sans-serif;
+  --font-code: "Open Sans", monospace;
 }
 
 /* CUSTOM CSS From Nowhere */
