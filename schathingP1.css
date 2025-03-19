@@ -1,11 +1,10 @@
-
-/* MAIN FONT Open Sans */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..00;1,300..800&display=swap');
+/* MAIN FONT SORA AOI */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@420&display=swap');
 :root {
-  --font-primary: "Open Sans", sans-serif;
-  --font-display: "Open Sans", sans-serif;
-  --font-headline: "Open Sans", sans-serif;
-  --font-code: "Open Sans", monospace;
+  --font-primary: "Sora", sans-serif;
+  --font-display: "Sora", sans-serif;
+  --font-headline: "Sora", sans-serif;
+  --font-code: "Sora", monospace;
 }
 
 /* CUSTOM CSS From Nowhere */
