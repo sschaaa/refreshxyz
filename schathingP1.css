@@ -148,6 +148,7 @@
 button[aria-label|="Send a gift"],
 button[aria-label|="Open GIF picker"],
 button[aria-label|="Open sticker picker"],
+button[aria-label|="app-launcher-entrypoint"],
 button[aria-label|="Open Translate Modal"] {
     display: none;
 }
