@@ -312,3 +312,14 @@ div[aria-label*="Members"] > div > div[role="listitem"] {
 		will-change: opacity;
 	}
 }
+
+/* Add Today Timestamp */
+span[class*="timestamp_"] > [aria-label^="Today at"]::before {
+    content: "Today at "
+}
+
+/* Hide app launcher */
+[class*=app-launcher-entrypoint] {
+  display: none;
+}
+
