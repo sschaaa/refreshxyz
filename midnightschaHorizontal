@@ -62,37 +62,6 @@
     padding-block: 2px;
 }
 
-/* Read All Button By Blade04208 */
-.vc-ranb-button {
-  margin: 0 18px;
-  width: var(--guildbar-avatar-size);
-  min-height: 40px;
-  max-height: 40px;
-  left: -7px;
-  padding: 5px;
-  rotate: 90deg;
-  background-color: var(--bg-3);
-  border: none;
-  border-radius: 12px;
-}
-
-.vc-ranb-button .contents__201d5 {
-  font-size: 0;
-}
-
-.vc-ranb-button .contents__201d5::after {
-  content: "asdfg";
-  font-size: 18px;
-  width: 16px;
-  height: 16px;
-  position: relative;
-  color: transparent;
-  top: 2.5px;
-  left: 4px;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iI0I3QjdCNyI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE4IDdsLTEuNDEtMS40MS02LjM0IDYuMzQgMS40MSAxLjQxTDE4IDd6bTQuMjQtMS40MUwxMS42NiAxNi4xNyA3LjQ4IDEybC0xLjQxIDEuNDFMMTEuNjYgMTlsMTItMTItMS40Mi0xLjQxek0uNDEgMTMuNDFMNiAxOWwxLjQxLTEuNDFMMS44MyAxMiAuNDEgMTMuNDF6Ii8+PC9zdmc+);
-  background-repeat: no-repeat;
-}
-
 .vc-ranb-button:hover {
   background-color: var(--accent-3);
 }
