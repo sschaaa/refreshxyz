@@ -1,0 +1,311 @@
+/* MAIN FONT SORA AOI */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@420&display=swap');
+:root {
+  --font-primary: "Sora", sans-serif;
+  --font-display: "Sora", sans-serif;
+  --font-headline: "Sora", sans-serif;
+  --font-code: "Sora", monospace;
+}
+
+/* CUSTOM CSS From Nowhere */
+/* Server Name Tooltip 1 LINE */
+[class^=tooltip] {
+    max-width: unset !important;
+}
+
+/* Search Bar Change Colour*/
+.icon_fea832.visible_fea832 {
+    color: var(--text-2);
+}
+
+/* Role color on profile By Refact0r*/
+.role_dfa8b6.pill_dfa8b6 {
+    position: relative;
+    background: none;
+    border: none;
+    padding-left: 28px;
+}
+
+.role_dfa8b6.pill_dfa8b6 > span {
+    z-index: 1;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleRemoveButton_dfa8b6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 !important;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569 {
+    margin: 6px 8px;
+}
+
+.role_dfa8b6.pill_dfa8b6 .roleCircle__4f569::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: var(--radius-xs);
+    filter: brightness(1.1);
+    opacity: 0.25;
+}
+
+/* Reduce Channel List Spacing */
+[class="link__2ea32"] {
+    padding-block: 2px;
+}
+
+.vc-ranb-button:hover {
+  background-color: var(--accent-3);
+}
+
+/* Move Vencord Toolbox */
+.visual-refresh .toolbar__9293f .iconWrapper__9293f {
+  margin: 0;
+  order: -1;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.visual-refresh .toolbar__9293f .iconWrapper__9293f:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Vencord Toolbox Icon */
+.vc-toolbox-btn,
+.vc-toolbox-icon {
+   content: url(https://raw.githubusercontent.com/scha-dev/schaicons/main/cat.svg);
+   right: 4px;
+}
+
+/* Add Background Color Discover */
+.circleIconButton__5bc7e {
+  background-color: var(--bg-2);
+}
+
+/* COLORFUL LINKS */
+.anchor_edefb8 > span:not(.username__703b9) {
+    background: linear-gradient(30deg, rgb(97, 218, 251) 20%, rgb(0, 123, 255) 98%);
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.3px; /* Makes the text more readable */
+    padding: 1px 2px; /* Adds spacing for better glow visibility */
+    background-clip: text;
+    text-shadow: 0 0 5px rgba(97, 218, 251, 0.5);
+    position: relative;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.anchor_edefb8 > span:not(.username__703b9):hover {
+    text-shadow: 0 0 8px rgba(97, 218, 251, 0.8);
+}
+
+
+/* UI CLEANUP – REMOVE UNWANTED STUFF */
+
+/* Remove Unnecessary Buttons Chat Bar */
+button[aria-label|="Send a gift"],
+button[aria-label|="Open GIF picker"],
+button[aria-label|="Open sticker picker"],
+button[aria-label|="Open Translate Modal"] {
+    display: none;
+}
+
+/* Remove Certain Message Actions */
+[aria-label*="Create Thread"],
+[aria-label*="Mark Unread"],
+[aria-label*="Copy Link"],
+[aria-label*="Pin Message"],
+[aria-label*="Copy Message ID"] {
+    display: none;
+}
+
+/* Remove Create Invite & Channel Buttons */
+[class^="iconVisibility_"] [aria-label="Create Invite"],
+[class^="iconVisibility_"] [aria-label="Edit Channel"],
+[class^="iconVisibility_"] [aria-label="Create Channel"] {
+    display: none !important;
+}
+
+/* Remove Emoji & Separator in Message Actions */
+div[aria-label*="Message Actions"] > div > div > div > div[class*="emoji"],
+div[aria-label*="Message Actions"] > div > div[class*="separator_"] {
+    display: none;
+}
+
+/* Remove App Edit Image Button */
+div[aria-label="Edit Image with Apps"] {
+    display: none;
+}
+
+/* Remove Boost Section from Servers */
+div[data-list-item-id*="channels___boosts-"] {
+    display: none;
+}
+
+/* Remove Active Now Activities */
+[class^=nowPlayingColumn_] {
+    display: none;
+}
+
+/* Remove Reaction Right-Click Menu */
+[id^="message-quickreact-"] {
+    display: none !important;
+}
+
+[id^="message-quickreact-"] {
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Remove Add Status */
+[aria-label="Add custom status"] {
+    display: none;
+}
+
+/* Remove Activity Members List */
+div[aria-label*="Members"] > div > div[role="listitem"] {
+    display: none;
+}
+
+/* Vencord MemberCount Tweaks */
+/* This module has no affect unless the vencord MemberCount plugin is installed */
+/* https://vencord.dev/plugins/MemberCount */
+
+.vc-membercount-online-dot,
+.vc-membercount-total-dot {
+    display: none !important;
+}
+
+.vc-membercount-total::before {
+    content: "/";
+    visibility: visible;
+    position: absolute;
+    display: contents;
+}
+
+.vc-membercount-total::after {
+    content: " online";
+    visibility: visible;
+    position: absolute;
+    display: contents;
+}
+
+.membersGroup_c8ffbb.container_cc72c1 {
+    padding-top: 20px;
+}
+
+
+/* Add Today Timestamp */
+span[class*="timestamp_"] > [aria-label^="Today at"]::before {
+    content: "Today at "
+}
+
+/* Hide app launcher */
+[class*=app-launcher-entrypoint] {
+  display: none;
+}
+
+/* MemberList Resize */
+.member__5d473 { 
+    margin-left: -4px;
+}
+
+/* Find Message Colour */
+.visual-refresh body{
+--background-message-highlight: hsla(233, 7%, 49%, 0.33);
+}
+
+/* Mini Control Panel */
+.nameTag__37e49 {
+  display: none;
+}
+
+[class*="panels"] [class*="avatarWrapper"] {
+  min-width: unset;
+}
+
+.container__37e49 {
+  gap: var(--space-4) !important;
+  
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+[class*="avatarWrapper__"] {
+  border-radius: 100% !important;
+  width: min-content;
+ 
+ &:hover {
+    background-color: transparent !important;
+ }
+ 
+ & > .avatar__37e49 {
+    width: 30px !important;
+    height: 40px;
+    
+    margin-top: -1px;
+
+    & > svg {
+      width: 39px !important;
+    }  
+  }
+}
+.content_a2f514 {
+    display: flex;
+    flex-direction: column;
+    > .spinner_a2f514 { display: none }
+    &:before {
+        display: block;
+        height: 128px;
+        position: relative;
+        content: url(https://canary.discord.com/channels/1015060230222131221/1120475966297350274/1355084529466998936);
+        image-rendering: pixelated;
+         align-content: center;
+         scale: 3.125;
+         margin-bottom: 96px;
+    }
+}
+
+/* Read All Button By Blade04208 */
+.vc-ranb-button {
+  margin: 0 18px;
+  width: var(--guildbar-avatar-size);
+  min-height: 40px;
+  max-height: 40px;
+  left: -7px;
+  padding: 5px;
+  rotate: 90deg;
+  background-color: var(--bg-3);
+  border: none;
+  border-radius: 12px;
+}
+
+.vc-ranb-button .contents__201d5 {
+  font-size: 0;
+}
+
+.vc-ranb-button .contents__201d5::after {
+  content: "asdfg";
+  font-size: 18px;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  color: transparent;
+  top: 2.5px;
+  left: 4px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMjRweCIgZmlsbD0iI0I3QjdCNyI+PHBhdGggZD0iTTAgMGgyNHYyNEgwVjB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTE4IDdsLTEuNDEtMS40MS02LjM0IDYuMzQgMS40MSAxLjQxTDE4IDd6bTQuMjQtMS40MUwxMS42NiAxNi4xNyA3LjQ4IDEybC0xLjQxIDEuNDFMMTEuNjYgMTlsMTItMTItMS40Mi0xLjQxek0uNDEgMTMuNDFMNiAxOWwxLjQxLTEuNDFMMS44MyAxMiAuNDEgMTMuNDF6Ii8+PC9zdmc+);
+  background-repeat: no-repeat;
+}
+
+.vc-ranb-button:hover {
+  background-color: var(--accent-3);
+}
