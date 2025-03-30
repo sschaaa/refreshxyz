@@ -12,7 +12,7 @@
 #app-mount .guilds_c48ade {
   transform-origin: top left;
   rotate: -90deg;
-  height: 98.3vw !important;
+  height: 98.4vw !important;
   bottom: unset;
   position: absolute !important;
   margin-top: -12px;
