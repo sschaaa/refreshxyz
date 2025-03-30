@@ -53,10 +53,6 @@
   --HSL-server-alignment: flex-start; /* Alignment of the server list. | OPTIONS: flex-start, center, flex-end | DEFAULT: flex-start */
 }
 
-/* style inbox button */
-.recentsIcon_c99c29 .button__85643 {
-display: none;
-}
 /* remove help button */
 .trailing_c38106 > a[href="https://support.discord.com"]
 {
@@ -69,4 +65,30 @@ padding-left: var(--gap);
 margin-top: -12px;
 margin-left: 2px;
 justify-content: flex-start;
+}
+
+/* move inbox button */
+.recentsIcon_c99c29 {
+position: fixed;
+width: 50px;
+top: 35px;
+
+left: 790px;
+}
+
+/* style inbox button */
+.recentsIcon_c99c29 .button__85643 {
+width: var(--guildbar-avatar-size);
+min-height: 40px;
+max-height: 40px;
+background-color: var(--bg-2);
+border-radius: 8px;
+transition: background-color 0.15s ease-out;
+
+&:hover {
+background-color: var(--bg-brand);
+.icon__9293f {
+color: var(--white);
+}
+}
 }
