@@ -13,11 +13,6 @@
     max-width: unset !important;
 }
 
-/* Search Bar Change Colour*/
-.icon_fea832.visible_fea832 {
-    color: var(--text-2);
-}
-
 /* Role color on profile By Refact0r*/
 .role_dfa8b6.pill_dfa8b6 {
     position: relative;
