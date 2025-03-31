@@ -13,11 +13,6 @@
     max-width: unset !important;
 }
 
-/* Search Bar Change Colour*/
-.icon_fea832.visible_fea832 {
-    color: var(--text-2);
-}
-
 /* Role color on profile By Refact0r*/
 .role_dfa8b6.pill_dfa8b6 {
     position: relative;
@@ -328,58 +323,3 @@ span[class*="timestamp_"] > [aria-label^="Today at"]::before {
     margin-left: -4px;
 }
 
-/* Find Message Colour */
-.visual-refresh body{
---background-message-highlight: hsla(233, 7%, 49%, 0.33);
-}
-
-/* Mini Control Panel */
-.nameTag__37e49 {
-  display: none;
-}
-
-[class*="panels"] [class*="avatarWrapper"] {
-  min-width: unset;
-}
-
-.container__37e49 {
-  gap: var(--space-4) !important;
-  
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-[class*="avatarWrapper__"] {
-  border-radius: 100% !important;
-  width: min-content;
- 
- &:hover {
-    background-color: transparent !important;
- }
- 
- & > .avatar__37e49 {
-    width: 30px !important;
-    height: 40px;
-    
-    margin-top: -1px;
-
-    & > svg {
-      width: 39px !important;
-    }  
-  }
-}
-.content_a2f514 {
-    display: flex;
-    flex-direction: column;
-    > .spinner_a2f514 { display: none }
-    &:before {
-        display: block;
-        height: 128px;
-        position: relative;
-        content: url(https://canary.discord.com/channels/1015060230222131221/1120475966297350274/1355084529466998936);
-        image-rendering: pixelated;
-         align-content: center;
-         scale: 3.125;
-         margin-bottom: 96px;
-    }
-}
