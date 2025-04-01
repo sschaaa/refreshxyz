@@ -166,10 +166,6 @@ div[aria-label="Edit Image with Apps"] {
     display: none;
 }
 
-/* Remove Boost Section from Servers */
-div[data-list-item-id*="channels___boosts-"] {
-    display: none;
-}
 
 /* Remove Active Now Activities */
 [class^=nowPlayingColumn_] {
