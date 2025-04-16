@@ -1,0 +1,116 @@
+:root {
+    --icon-size: 40;
+    --padding: 8px;
+
+    --icon-size-px: calc(var(--icon-size) * 1px);
+    --scale-factor: calc(var(--icon-size) / 40 * 100%);
+    --dm-bar-height: 0px;
+}
+
+.visual-refresh {
+    .base_c48ade:has(.scroller_ef3116 > div:not([class], [aria-label], [aria-hidden])) {
+        --dm-bar-height: calc(var(--icon-size-px) + var(--padding));
+    }
+
+    .base_c48ade {
+        grid-template-columns: [start] var(--custom-guild-list-width) [guildsEnd] min-content [channelsEnd] 1fr [end];
+        grid-template-rows: [top] var(--custom-app-top-bar-height) [titleBarEnd] var(--dm-bar-height) [dmsEnd] min-content [noticeEnd] 1fr [end];
+        grid-template-areas:
+            'titleBar titleBar titleBar'
+            'guildsList dms dms'
+            'guildsList notice notice'
+            'guildsList channelsList page';
+    }
+
+    .guilds_c48ade {
+        position: absolute;
+        grid-area: none;
+        height: var(--dm-bar-height);
+        width: calc(100vw - var(--custom-guild-list-width));
+        overflow: visible;
+        margin: 0;
+        margin-left: var(--custom-guild-list-width);
+        z-index: 1000;
+    }
+
+    .sidebar_c48ade {
+        overflow: visible;
+    }
+
+    .scroller_ef3116 /* original serverlist scroller */ {
+        flex-direction: row;
+        align-items: start;
+        padding: 0;
+        overflow: scroll hidden !important;
+        width: 100%;
+        height: 100%;
+    }
+
+    .scroller_ef3116 > .stack_dbd263 /* servers container */ {
+        overflow: hidden scroll;
+        scrollbar-width: none;
+        position: fixed;
+        top: calc(var(--custom-app-top-bar-height) + 40px + var(--space-xs));
+        left: 0;
+        bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) * 4 + 80px);
+        width: var(--custom-guild-list-width);
+    }
+
+    .tutorialContainer__1f388 /* dm/home button */ {
+        position: fixed;
+        z-index: 1000;
+        top: var(--custom-app-top-bar-height);
+        left: 0;
+        background: var(--background-tertiary);
+    }
+
+    .scroller_ef3116 > div:not([class], [aria-label]) /* dms */ {
+        width: var(--icon-size-px);
+        height: var(--icon-size-px) !important;
+
+        .listItem__650eb {
+            width: 100%;
+            height: 100%;
+
+            .pill_ed9a5f /* dm pills */ {
+                display: none;
+            }
+
+            .listItemWrapper__91816 {
+                transform: scale(var(--scale-factor)) !important;
+                transform-origin: 50% 0;
+            }
+        }
+
+        & + .listItem__650eb {
+            display: none;
+        }
+    }
+
+    .unreadMentionsIndicatorBottom_ef3116 /* serverlist bottom new indicator */ {
+        position: fixed;
+        left: 0;
+        bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) * 4 + 80px);
+    }
+
+    .tutorialContainer__650eb /* new server button */ {
+        background: var(--background-tertiary);
+        position: fixed;
+        left: 0;
+        bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) * 2 + 40px);
+        padding: var(--space-xs) 0;
+    }
+
+    .tutorialContainer__650eb + .listItem__650eb /* discovery button */ {
+        background: var(--background-tertiary);
+        position: fixed;
+        left: 0;
+        bottom: calc(var(--custom-app-panels-height, 0) + var(--space-xs) * 1);
+        padding-bottom: var(--space-xs);
+    }
+
+    .tutorialContainer__1f388 + .listItem__650eb /* line under dms button when no dms */,
+    .tutorialContainer__650eb + .listItem__650eb + .listItem__650eb /* download button (vesktop) */ {
+        display: none;
+    }
+}
