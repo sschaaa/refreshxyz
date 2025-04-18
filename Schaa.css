@@ -109,8 +109,9 @@
 /* Vencord Toolbox Icon */
 .vc-toolbox-btn,
 .vc-toolbox-icon {
-   content: url(https://raw.githubusercontent.com/scha-dev/schaicons/main/cat.svg);
-   right: 4px;
+  content: url(https://files.catbox.moe/z307uk.svg?size=64&quality=lossless);
+  scale: 0.70;
+  right: 4px;
 }
 
 
