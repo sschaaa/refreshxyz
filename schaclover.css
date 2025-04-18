@@ -346,3 +346,9 @@ display: none!important;
   transform: scale(1.2);
   background: url('https://files.catbox.moe/q4oi4j.png?size=80') no-repeat center / contain;
 }
+
+/* Add Background Color Discover */
+.circleIconButton__5bc7e {
+  background-color: var(--bg-3);
+}
+
