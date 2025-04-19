@@ -1,0 +1,47 @@
+/* FAV V2 EXP */
+.iconContainerWithGuildIcon__2ea32 {
+    .icon__2894c {
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 20px;
+        height: 20px;
+        background: none !important;
+
+        >path {
+            filter: drop-shadow(-1px 0 0px var(--background-base-lowest)) drop-shadow(1px 0 0px var(--background-base-lowest)) drop-shadow(0px 1px 0px var(--background-base-lowest)) drop-shadow(0px -1px 0px var(--background-base-lowest));
+        }
+    }
+
+    .svg__2338f {
+        position: absolute;
+        top: -6px;
+        left: -10px;
+        overflow: visible !important;
+        width: calc(28px + var(--space-xxs) + var(--space-xxs));
+        height: calc(28px + var(--space-xxs) + var(--space-xxs));
+        contain: none;
+
+        foreignObject {
+            mask: none !important;
+            overflow: hidden !important;
+            border-radius: var(--radius-sm) 0 0 var(--radius-sm) !important;
+            width: calc(28px + var(--space-xxs) + var(--space-xxs)) !important;
+
+            .channelGuildIcon__2894c {
+                position: absolute;
+                top: calc(0px - var(--space-xxs) - var(--space-xxs));
+                width: calc(28px + var(--space-xxs) + var(--space-xxs)) !important;
+                height: calc(28px + var(--space-xxs) + var(--space-xxs)) !important;
+                mask-image: linear-gradient(to right, black 0%, transparent 100%);
+                border-radius: 0px !important;
+            }
+        }
+
+
+    }
+}
+
+.modeSelected__2ea32 .iconWithGuildIcon__2ea32 {
+    color: var(--header-primary)
+}
+
