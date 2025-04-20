@@ -416,3 +416,8 @@ display: none!important;
   opacity: 1 !important;
   transform: none !important;
 }
+
+/* This will change the colour of the CURRENT channel you are in */
+.modeSelected__2ea32 .name__2ea32 {     
+    color: var(--accent-2);
+}
