@@ -189,9 +189,23 @@ div[aria-label="Edit Image with Apps"] {
     display: none;
 }
 
-/* Remove Activity Members List */
-div[aria-label*="Members"] > div > div[role="listitem"] {
-    display: none;
+/* Hide Member List Activities */
+[class*='membersGroup']:has([role=button]),
+[class*='member'] [class*='container']:has([class*='badges']) {
+  display: none;
+}
+
+/* Collapse Icon Fix */
+.containerDefault__29444 {
+  > div {
+    padding-left: 0.5em;
+
+    > div {
+      display: flex !important;
+      place-content: start !important;
+      flex-direction: row-reverse !important;
+    }
+  }
 }
 
 /* Vencord MemberCount Tweaks */
@@ -236,40 +250,6 @@ span[class*="timestamp_"] > [aria-label^="Today at"]::before {
 .member__5d473 { 
     margin-left: -4px;
 }
-
-/* Hove Emoji */
-.buttons__74017 {
-  gap: 0 !important;
-  pointer-events: none;
-}
-.buttons__74017:hover {
-  pointer-events: all;
-}
-
-.buttons__74017 > button {
-  display: none;
-}
-.channelAppLauncher_e6e74f.channelAppLauncher_e6e74f {
-  display: none;
-}
-
-.expression-picker-chat-input-button {
-  pointer-events: none;
-  opacity: 0;
-  transform: translateX(4px);
-  transition: .2s ease;
-}
-.buttons__74017:hover .expression-picker-chat-input-button {
-  pointer-events: all;
-  opacity: 1;
-  transform: none;
-}
-.expression-picker-chat-input-button:has(.emojiButton__04eed) {
-  pointer-events: all;
-  opacity: 1 !important;
-  transform: none !important;
-}
-
 
 /* Hide Quests on UserPanel */
 section[class^="panels_"]>div[class^="mask_"] {
