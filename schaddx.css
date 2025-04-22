@@ -212,10 +212,6 @@ span[class*="timestamp_"] > [aria-label^="Today at"]::before {
   display: none;
 }
 
-/* MemberList Resize */
-.member__5d473 { 
-    margin-left: -4px;
-}
 
 /* Hide Quests on UserPanel */
 section[class^="panels_"]>div[class^="mask_"] {
