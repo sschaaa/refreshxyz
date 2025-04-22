@@ -55,11 +55,6 @@
     opacity: 0.25;
 }
 
-/* Reduce Channel List Spacing */
-[class="link__2ea32"] {
-    padding-block: 2px;
-}
-
 /* Move Vencord Toolbox */
 .visual-refresh .toolbar__9293f .iconWrapper__9293f {
   margin: 0;
