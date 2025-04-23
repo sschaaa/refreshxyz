@@ -56,7 +56,7 @@
 
 /* Reduce Channel List Spacing */
 [class="link__2ea32"] {
-    padding-block: 2px;
+    padding-block: 1px;
 }
 
 /* Read All Button By Blade04208 */
@@ -186,10 +186,7 @@ div[aria-label="Edit Image with Apps"] {
     overflow: hidden !important;
 }
 
-/* Remove Add Status */
-[aria-label="Add custom status"] {
-    display: none;
-}
+
 
 /* Hide Member List Activities */
 [class*='membersGroup']:has([role=button]),
@@ -423,4 +420,3 @@ display: none!important;
 .modeSelected__2ea32 .name__2ea32 {     
     color: var(--accent-2);
 }
-
