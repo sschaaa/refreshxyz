@@ -122,22 +122,6 @@
   background-color: var(--bg-3);
 }
 
-/* COLORFUL LINKS */
-.anchor_edefb8 > span:not(.username__703b9) {
-    background: linear-gradient(30deg, rgb(97, 218, 251) 20%, rgb(0, 123, 255) 98%);
-    -webkit-text-fill-color: transparent;
-    letter-spacing: 0.3px; /* Makes the text more readable */
-    padding: 1px 2px; /* Adds spacing for better glow visibility */
-    background-clip: text;
-    text-shadow: 0 0 5px rgba(97, 218, 251, 0.5);
-    position: relative;
-    transition: text-shadow 0.3s ease-in-out;
-}
-
-.anchor_edefb8 > span:not(.username__703b9):hover {
-    text-shadow: 0 0 8px rgba(97, 218, 251, 0.8);
-}
-
 
 /* UI CLEANUP – REMOVE UNWANTED STUFF */
 
