@@ -222,21 +222,12 @@ span[class*="timestamp_"] > [aria-label^="Today at"]::before {
 }
 
 
-/* Hide app launcher */
-[class*=app-launcher-entrypoint] {
-  display: none;
-}
+
 
 
 /* MemberList Resize */
 .member__5d473 { 
     margin-left: -4px;
-}
-
-
-/* Hide Quests on UserPanel */
-section[class^="panels_"]>div[class^="mask_"] {
-  display: none;
 }
 
 
@@ -256,16 +247,6 @@ display: none!important;
 .iconContainer_c00127 {
     content: url(https://files.catbox.moe/q4oi4j.png?size=64&quality=lossless);
     display: inline-block;
-}
-
-
-/* Pinned Page Switcher */
-[class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
-  position: sticky;
-  bottom: 10px;
-  z-index: 999;
-  border-radius: 10px;
-  background: var(--bg-overlay-1, var(--background-secondary));
 }
 
 
@@ -292,59 +273,64 @@ display: none!important;
   background: url('https://files.catbox.moe/q4oi4j.png?size=80') no-repeat center / contain;
 }
 
-
-/* BIG EMOJI */
-.layerContainer_da8173 .positionLayer__08434 {
-  width: 100vw;
-  height: 100vh !important;
-  left: 0px;
-  bottom: 0px !important;
-  align-items: center !important;
-  align-content: center !important;
-  background-color: rgba(0, 0, 0, 0.5);
+/* This will change the colour of the CURRENT channel you are in */
+.modeSelected__2ea32 .name__2ea32 {     
+    color: var(--accent-2);
 }
 
-.drawerSizingWrapper__08434 {
-  justify-self: center !important;
-  align-self: center !important;
-  right: 20vw !important;
-  left: 20vw !important;
-  top: 60vh !important;
-  bottom: 20vh !important;
-  height: 50vh;
-  width: 50vw !important;
+/* Hide Quests on UserPanel */
+section[class^="panels_"]>div[class^="mask_"] {
+  display: none;
 }
 
 
+/* SEARCH BAR --------------------------- */
 /* PRETTIER SEARCH BAR */
-[class*=search]:not([class*=open]) > [class^=searchBar] {
-  width: 24px;
-  margin-bottom: -3px;
-  margin-left: -15px;
-  background: transparent;
-  border-width: 0px;
+.icon__97492 {
+    cursor: pointer;
+}
+.search__49676:not(:focus-within) .searchBar__97492 {
+    cursor: pointer;
+    border: transparent;
+    background: transparent;
+    width: 30px;
+    align-items: center;
+    transition: width 0.3s ease, background 0.3s ease, border 0.3s ease;
+}
+.search__49676 .iconContainer_fea832 {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.search__49676 .iconContainer_fea832:hover * {
+    color: var(--icon-secondary);
+}
+.search__49676:focus-within .searchBar__97492 {
+    border: 1px solid color-mix(in srgb, var(--icon-secondary) 20%, transparent);
+    background: rgba(0, 0, 0, 0.2);
+    width: 244px;
+    align-items: center;
+    transition: width 0.3s ease, background 0.3s ease, border 0.3s ease;
 }
 
-[class*=searchBarComponent] {
-  background: transparent;
+/* Pinned Page Switcher */
+[class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
+  position: sticky;
+  bottom: 10px;
+  z-index: 999;
+  border-radius: 10px;
+  background: var(--bg-overlay-1, var(--background-secondary));
 }
 
-[class*=search]:not([class*=open]) [class^='iconLayout'] {
-  cursor: pointer;
-}
 
-[class*=search]:not([class*=open]) [class^='iconContainer'] {
-  transform: scale(1.4);
+/* EMOJI -------------------- */
+/* remove reaction emoji */
+[class^=hoverBarButton_][aria-label^="Click to react"], [class^=separator_] {
+  display: none !important;
 }
-
-[class*=search]:not([class*=open]) [class^='icon_fea832']{
-  color: var(--interactive-normal);
-}
-
-[class*=search]:not([class*=open]):hover [class^='icon'] {
-  color: var(--interactive-active);
-}
-
 
 /* Hover Emoji */
 .buttons__74017 {
@@ -380,14 +366,24 @@ display: none!important;
   transform: none !important;
 }
 
-
-/* This will change the colour of the CURRENT channel you are in */
-.modeSelected__2ea32 .name__2ea32 {     
-    color: var(--accent-2);
+/* EXPAND EMOJI (CHAR BAR) */
+.layerContainer_da8173 .positionLayer__08434 {
+  width: 100vw;
+  height: 100vh !important;
+  left: 0px;
+  bottom: 0px !important;
+  align-items: center !important;
+  align-content: center !important;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-/* remove reaction emoji */
-[class^=hoverBarButton_][aria-label^="Click to react"], [class^=separator_] {
-  display: none !important;
+.drawerSizingWrapper__08434 {
+  justify-self: center !important;
+  align-self: center !important;
+  right: 20vw !important;
+  left: 20vw !important;
+  top: 60vh !important;
+  bottom: 20vh !important;
+  height: 50vh;
+  width: 50vw !important;
 }
