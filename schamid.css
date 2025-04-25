@@ -1,3 +1,5 @@
+
+
 /* MAIN FONT SORA AOI */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@420&display=swap');
 :root {
@@ -8,12 +10,11 @@
 }
 
 
-
-/* CUSTOM CSS From Nowhere */
 /* Server Name Tooltip 1 LINE */
 [class^=tooltip] {
     max-width: unset !important;
 }
+
 
 /* Role color on profile By Refact0r*/
 .role_dfa8b6.pill_dfa8b6 {
@@ -54,10 +55,12 @@
     opacity: 0.25;
 }
 
+
 /* Reduce Channel List Spacing */
 [class="link__2ea32"] {
-    padding-block: 1px;
+    padding-block: 1.5px;
 }
+
 
 /* Read All Button By Blade04208 */
 .vc-ranb-button {
@@ -96,6 +99,7 @@
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' fill-rule='evenodd' d='M9.707 2.409C9 3.036 9 4.183 9 6.476v11.048c0 2.293 0 3.44.707 4.067s1.788.439 3.95.062l2.33-.406c2.394-.418 3.591-.627 4.302-1.505c.711-.879.711-2.149.711-4.69V8.948c0-2.54 0-3.81-.71-4.689c-.712-.878-1.91-1.087-4.304-1.504l-2.328-.407c-2.162-.377-3.243-.565-3.95.062M12 10.169c.414 0 .75.351.75.784v2.094c0 .433-.336.784-.75.784s-.75-.351-.75-.784v-2.094c0-.433.336-.784.75-.784' clip-rule='evenodd'/%3E%3Cpath fill='%23000' d='M7.547 4.5c-2.058.003-3.131.048-3.815.732C3 5.964 3 7.142 3 9.5v5c0 2.357 0 3.535.732 4.268c.684.683 1.757.729 3.815.732c-.047-.624-.047-1.344-.047-2.123V6.623c0-.78 0-1.5.047-2.123'/%3E%3C/svg%3E");
 }
 
+
 /* Move Vencord Toolbox */
 .visual-refresh .toolbar__9293f .iconWrapper__9293f {
   margin: 0;
@@ -108,6 +112,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   opacity: 0.8;
 }
 
+
 /* Vencord Toolbox Icon */
 .vc-toolbox-btn,
 .vc-toolbox-icon {
@@ -115,6 +120,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   scale: 0.67;
   right: 5px;
 }
+
 
 /* Add Background Color Discover */
 .circleIconButton__5bc7e {
@@ -133,6 +139,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     display: none;
 }
 
+
 /* Remove Create Invite & Channel Buttons */
 [class^="iconVisibility_"] [aria-label="Create Invite"],
 [class^="iconVisibility_"] [aria-label="Edit Channel"],
@@ -140,11 +147,6 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     display: none !important;
 }
 
-/* Remove Emoji & Separator in Message Actions */
-div[aria-label*="Message Actions"] > div > div > div > div[class*="emoji"],
-div[aria-label*="Message Actions"] > div > div[class*="separator_"] {
-    display: none;
-}
 
 /* Remove App Edit Image Button */
 div[aria-label="Edit Image with Apps"] {
@@ -157,18 +159,14 @@ div[aria-label="Edit Image with Apps"] {
     display: none;
 }
 
+
 /* Remove Reaction Right-Click Menu */
 [id^="message-quickreact-"] {
     display: none !important;
 }
-
-[id^="message-quickreact-"] {
-    height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow: hidden !important;
+#message>div>.wrapper_f563df {
+  display: none;
 }
-
 
 
 /* Hide Member List Activities */
@@ -177,7 +175,8 @@ div[aria-label="Edit Image with Apps"] {
   display: none;
 }
 
-/* Collapse Icon Fix */
+
+/* Collapse Icon Fix (channel list)*/
 .containerDefault__29444 {
   > div {
     padding-left: 0.5em;
@@ -190,10 +189,9 @@ div[aria-label="Edit Image with Apps"] {
   }
 }
 
+
 /* Vencord MemberCount Tweaks */
 /* This module has no affect unless the vencord MemberCount plugin is installed */
-/* https://vencord.dev/plugins/MemberCount */
-
 .vc-membercount-online-dot,
 .vc-membercount-total-dot {
     display: none !important;
@@ -223,25 +221,30 @@ span[class*="timestamp_"] > [aria-label^="Today at"]::before {
     content: "Today at "
 }
 
+
 /* Hide app launcher */
 [class*=app-launcher-entrypoint] {
   display: none;
 }
+
 
 /* MemberList Resize */
 .member__5d473 { 
     margin-left: -4px;
 }
 
+
 /* Hide Quests on UserPanel */
 section[class^="panels_"]>div[class^="mask_"] {
   display: none;
 }
 
+
 /* Hide Reply & Send Reaction Buttons Profile */
 .avatarPopover__2d0ab {
 display: none!important;
 }
+
 
 /*i'm new here, say hi!*/
 [class*=newMemberBadge]:before {
@@ -255,6 +258,7 @@ display: none!important;
     display: inline-block;
 }
 
+
 /* Pinned Page Switcher */
 [class^=searchResultsWrap_] [class^=container_]:has([class^=pageControlContainer_]){
   position: sticky;
@@ -263,6 +267,7 @@ display: none!important;
   border-radius: 10px;
   background: var(--bg-overlay-1, var(--background-secondary));
 }
+
 
 /* Link Hover with Badge by Refactor */
 :root {
@@ -287,10 +292,6 @@ display: none!important;
   background: url('https://files.catbox.moe/q4oi4j.png?size=80') no-repeat center / contain;
 }
 
-/* Add Background Color Discover */
-.circleIconButton__5bc7e {
-  background-color: var(--bg-3);
-}
 
 /* BIG EMOJI */
 .layerContainer_da8173 .positionLayer__08434 {
@@ -313,6 +314,7 @@ display: none!important;
   height: 50vh;
   width: 50vw !important;
 }
+
 
 /* PRETTIER SEARCH BAR */
 [class*=search]:not([class*=open]) > [class^=searchBar] {
@@ -356,6 +358,7 @@ display: none!important;
 .buttons__74017 > button {
   display: none;
 }
+
 .channelAppLauncher_e6e74f.channelAppLauncher_e6e74f {
   display: none;
 }
@@ -377,7 +380,14 @@ display: none!important;
   transform: none !important;
 }
 
+
 /* This will change the colour of the CURRENT channel you are in */
 .modeSelected__2ea32 .name__2ea32 {     
     color: var(--accent-2);
+}
+
+
+/* remove reaction emoji */
+[class^=hoverBarButton_][aria-label^="Click to react"], [class^=separator_] {
+  display: none !important;
 }
