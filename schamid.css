@@ -279,35 +279,13 @@ section[class^="panels_"]>div[class^="mask_"] {
 
 
 /* SEARCH BAR --------------------------- */
-/* PRETTIER SEARCH BAR */
-.icon__97492 {
-    cursor: pointer;
-}
-.search__49676:not(:focus-within) .searchBar__97492 {
-    cursor: pointer;
-    border: transparent;
-    background: transparent;
-    width: 30px;
-    align-items: center;
-    transition: width 0.3s ease, background 0.3s ease, border 0.3s ease;
+/* Fix for search bar */
+.searchBar__97492 {
+	width: auto !important;
+	min-width: 90px;
 }
 .search__49676 .iconContainer_fea832 {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-    position: absolute;
-    right: 0;
-    cursor: pointer;
-}
-.search__49676 .iconContainer_fea832:hover * {
-    color: var(--icon-secondary);
-}
-.search__49676:focus-within .searchBar__97492 {
-    border: 1px solid color-mix(in srgb, var(--icon-secondary) 20%, transparent);
-    background: rgba(0, 0, 0, 0.2);
-    width: 244px;
-    align-items: center;
-    transition: width 0.3s ease, background 0.3s ease, border 0.3s ease;
+display: none;
 }
 
 /* Pinned Page Switcher */
