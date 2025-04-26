@@ -360,24 +360,3 @@ section[class^="panels_"]>div[class^="mask_"] {
   transform: none !important;
 }
 
-/* EXPAND EMOJI (CHAR BAR) */
-.layerContainer_da8173 .positionLayer__08434 {
-  width: 100vw;
-  height: 100vh !important;
-  left: 0px;
-  bottom: 0px !important;
-  align-items: center !important;
-  align-content: center !important;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.drawerSizingWrapper__08434 {
-  justify-self: center !important;
-  align-self: center !important;
-  right: 20vw !important;
-  left: 20vw !important;
-  top: 60vh !important;
-  bottom: 20vh !important;
-  height: 50vh;
-  width: 50vw !important;
-}
