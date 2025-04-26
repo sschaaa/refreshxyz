@@ -1,5 +1,3 @@
-
-
 /* MAIN FONT SORA AOI */
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@420&display=swap');
 :root {
@@ -53,12 +51,6 @@
     border-radius: var(--radius-xs);
     filter: brightness(1.1);
     opacity: 0.25;
-}
-
-
-/* Reduce Channel List Spacing */
-[class="link__2ea32"] {
-    padding-block: 1.5px;
 }
 
 
@@ -189,6 +181,11 @@ div[aria-label="Edit Image with Apps"] {
   }
 }
 
+/* Reduce Channel List Spacing */
+[class="link__2ea32"] {
+    padding-block: 1.5px;
+}
+
 
 /* Vencord MemberCount Tweaks */
 /* This module has no affect unless the vencord MemberCount plugin is installed */
@@ -220,9 +217,6 @@ div[aria-label="Edit Image with Apps"] {
 span[class*="timestamp_"] > [aria-label^="Today at"]::before {
     content: "Today at "
 }
-
-
-
 
 
 /* MemberList Resize */
@@ -300,7 +294,7 @@ section[class^="panels_"]>div[class^="mask_"] {
 .search__49676 .iconContainer_fea832 {
     width: 20px;
     height: 20px;
-    margin-right: 2px;
+    margin-right: 8px;
     position: absolute;
     right: 0;
     cursor: pointer;
